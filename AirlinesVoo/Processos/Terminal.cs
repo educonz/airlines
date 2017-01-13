@@ -14,13 +14,12 @@ namespace AirlinesVoo.Processos
         public void Transporte(Pessoa motorista, Pessoa passageiro)
         {
             new SmartForTwo().Transportar(motorista, passageiro);
-            tripulacao.Embarque(motorista).Embarque(passageiro);
+            tripulacao.Embarque(passageiro);
         }    
         
-        public void VerificarTripulantesTransportados()
+        public bool VerificarTripulantesTransportados()
         {
-            if (!tripulacao.VerificarTripulantesTransportados())
-                throw new Exception("Quantidades de tripulantes está incorreta!");
+            return tripulacao.VerificarTripulantesTransportados();
         }    
     }
 }

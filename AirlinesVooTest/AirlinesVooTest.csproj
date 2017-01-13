@@ -51,6 +51,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="DirigirTest.cs" />
+    <Compile Include="EmbarcarTripulantesTest.cs" />
     <Compile Include="TransporteTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
